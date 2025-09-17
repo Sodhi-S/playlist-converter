@@ -1,5 +1,5 @@
 {
-  "name": "my-v0-project",
+  "name": "converter",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -45,6 +45,10 @@
     "date-fns": "4.1.0",
     "embla-carousel-react": "8.5.1",
     "geist": "latest",
+    "express": "^4.19.2",
+    "vercel": "^31.6.1",
+    "axios": "^1.6.8",
+    "dotenv": "^16.4.5",
     "input-otp": "1.4.1",
     "lucide-react": "^0.454.0",
     "next": "14.2.16",

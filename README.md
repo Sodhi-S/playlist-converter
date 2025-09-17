@@ -56,6 +56,22 @@ POST /auth/spotify/callback
 POST /auth/soundcloud/callback
 \`\`\`
 
+## Backend API (Node.js, Vercel Serverless)
+
+This project includes a backend API (Node.js, Express-style, Vercel serverless functions) for playlist conversion between Spotify and SoundCloud.
+
+### Endpoints
+
+- `/api/auth/spotify` – Spotify OAuth authentication
+- `/api/auth/soundcloud` – SoundCloud OAuth authentication
+- `/api/playlist/spotify` – Fetch Spotify playlists
+- `/api/playlist/soundcloud` – Fetch SoundCloud playlists
+- `/api/convert` – Convert playlists between platforms
+
+### Setup
+- Environment variables for API keys/secrets are required. See `.env.example` (to be created).
+- Endpoints are deployed as Vercel serverless functions in the `/api` directory.
+
 ## 🔧 Development
 
 \`\`\`bash
