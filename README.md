@@ -71,6 +71,11 @@ This project includes a backend API (Node.js, Express-style, Vercel serverless f
 ### Setup
 - Environment variables for API keys/secrets are required. See `.env.example` (to be created).
 - Endpoints are deployed as Vercel serverless functions in the `/api` directory.
+- Place all backend API endpoints in the `/api` directory for Vercel serverless deployment.
+
+## /backend Directory
+
+The `/backend` directory contains backend-only helpers and logic, such as API wrappers for Spotify and SoundCloud. These files are imported by the serverless endpoints in `/api/` and should not be used on the frontend.
 
 ## 🔧 Development
 
@@ -78,6 +83,8 @@ This project includes a backend API (Node.js, Express-style, Vercel serverless f
 npm install
 npm run dev
 \`\`\`
+- Run `npm install` or `pnpm install` to install backend dependencies (express, axios, dotenv, vercel).
+- You will need to set environment variables for Spotify and SoundCloud API keys/secrets in a `.env` file.
 
 ## 📱 Usage
 
